@@ -13,7 +13,7 @@ router.get("/", async(req,res) => {
   }
 })
 
-router.get("/single/:id", async(req,res) => {
+router.get("/singlew/:id", async(req,res) => {
   try{
     const id = req.params.id
     let data = await AnimalModel.findOne({_id:id});
